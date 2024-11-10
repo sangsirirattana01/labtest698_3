@@ -13,10 +13,6 @@ with open('model_penguin_65130701938.pkl', 'rb') as f:
 with open('scaler_penguin.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
-# โหลด label encoder
-with open('species_encoder.pkl', 'rb') as f:
-    species_encoder = pickle.load(f)
-
 # สร้างฟังก์ชันสำหรับพยากรณ์
 def predict_species(island, culmen_length, culmen_depth, flipper_length, body_mass, sex):
     input_data = np.array([[island, culmen_length, culmen_depth, flipper_length, body_mass, sex]])
