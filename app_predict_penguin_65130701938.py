@@ -7,7 +7,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
 
 # โหลดโมเดลและ scaler
-with open('model_penguin.pkl', 'rb') as f:
+with open('model_penguin_65130701938.pkl', 'rb') as f:
     model = pickle.load(f)
 
 with open('scaler_penguin.pkl', 'rb') as f:
